@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 30 30% 96%;
+    --foreground: 20 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 10% 10%;
+    --primary: 12 83% 55%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 30 20% 94%;
+    --secondary-foreground: 12 50% 30%;
+    --muted: 30 10% 92%;
+    --muted-foreground: 20 10% 40%;
+    --accent: 12 30% 92%;
+    --accent-foreground: 12 60% 35%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 20 10% 85%;
+    --input: 20 10% 85%;
+    --ring: 12 83% 55%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 25 90% 60%;
+    --chart-3: 350 70% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 240 10% 13%;
+    --foreground: 20 10% 98%;
+    --card: 240 10% 16%;
+    --card-foreground: 20 10% 98%;
+    --popover: 240 10% 16%;
+    --popover-foreground: 20 10% 98%;
+    --primary: 12 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 10% 22%;
+    --secondary-foreground: 20 10% 98%;
+    --muted: 240 10% 22%;
+    --muted-foreground: 20 10% 75%;
+    --accent: 12 30% 25%;
+    --accent-foreground: 12 60% 80%;
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 25%;
+    --input: 240 10% 25%;
+    --ring: 12 80% 60%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 25 90% 60%;
+    --chart-3: 350 70% 50%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.ProseMirror {
+  @apply min-h-[500px] p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+}
+
+.ProseMirror p {
+  @apply my-4;
+}
+
+.ProseMirror h1 {
+  @apply text-4xl font-bold my-6;
+}
+
+.ProseMirror h2 {
+  @apply text-3xl font-bold my-5;
+}
+
+.ProseMirror h3 {
+  @apply text-2xl font-bold my-4;
+}
+
+.ProseMirror ul {
+  @apply list-disc pl-6 my-4;
+}
+
+.ProseMirror ol {
+  @apply list-decimal pl-6 my-4;
+}
+
+.ProseMirror blockquote {
+  @apply border-l-4 border-primary pl-4 my-4 italic;
+}
+
+.hindi-text {
+  font-family: 'Martel', serif;
+}
+
+.indian-border {
+  position: relative;
+}
+
+.indian-border::before,
+.indian-border::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, hsl(12, 83%, 55%), hsl(25, 90%, 60%));
+  border-radius: 3px;
+}
+
+.indian-border::before {
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+}
+
+.indian-border::after {
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.fade-in-delay-1 {
+  animation: fadeIn 0.5s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fadeIn 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fadeIn 0.5s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap');
