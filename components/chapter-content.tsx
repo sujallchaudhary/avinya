@@ -63,7 +63,7 @@ export function ChapterContent({
       <div>
         {
           thumbnail && (
-            <Image src={thumbnail} alt={title} className="rounded-lg mb-4" height={800} width={800} />
+            <img src={thumbnail} alt={title} className="rounded-lg mb-4" height={800} width={800} />
           )
         }
       </div>

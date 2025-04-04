@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Eye, ThumbsUp, Book, ChevronDown, BookOpen } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { cookies } from 'next/headers';
@@ -37,10 +36,9 @@ function StoryCard({ story }: { story: Story }) {
     <Link href={`/story/${story.slug}`}>
       <Card className="h-full overflow-hidden transition-all hover:shadow-md hover:scale-[1.02] border-border/40 hover:border-primary/40 fade-in">
         <div className="relative w-full h-[180px]">
-          <Image
+          <img
             src={story.thumbnail || '/placeholder-cover.jpg'}
             alt={story.title}
-            fill
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>

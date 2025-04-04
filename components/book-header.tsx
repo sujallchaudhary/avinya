@@ -5,7 +5,7 @@ export function BookHeader() {
   return (
     <div className="mb-12 text-center fade-in">
       <div className="flex items-center justify-center mb-6">
-        <Image 
+        <img
           src="/logo2.png" 
           alt="logo" 
           height={400} 

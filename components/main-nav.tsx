@@ -19,7 +19,7 @@ export function MainNav() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image alt="logo" src="/logo2.png" height={400} width={400} className="h-6 w-6 hidden sm:flex" />
+            <img alt="logo" src="/logo2.png" height={400} width={400} className="h-6 w-6 hidden sm:flex" />
             <span className="hidden font-bold sm:inline-block">
               Kavyapath
             </span>

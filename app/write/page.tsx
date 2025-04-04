@@ -164,12 +164,12 @@ export default function WritePage() {
       <Popup
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}
-        title="Story Added Successfully."
-        description="Note: Your story will be reviewed by our team before it is published. please wait for the review. Thank you."
+        title="Poem Added Successfully."
+        description="Note: Your poem will be reviewed by our team before it is published. please wait for the review. Thank you."
         okButtonText="Got it"
         position="center"
       />
-      {loadingPage && <LoadingScreen message="Saving Story..." description="Please wait while we save your story" isLoading={loadingPage} />}
+      {loadingPage && <LoadingScreen message="Saving poem..." description="Please wait while we save your story" isLoading={loadingPage} />}
       <div className="container mx-auto px-4 py-8 space-y-6">
         <div className="space-y-4 bg-card rounded-lg p-6 shadow-lg">
           <h2 className="text-xl font-semibold">Add New Poem</h2>
