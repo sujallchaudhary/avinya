@@ -6,7 +6,7 @@ export function BookHeader() {
     <div className="mb-12 text-center fade-in">
       <div className="flex items-center justify-center mb-6">
         <Image 
-          src="https://sdrive.blr1.cdn.digitaloceanspaces.com/files/147f5a9b9f68d2f31a43080ba18d61c0.png" 
+          src="/logo2.png" 
           alt="logo" 
           height={400} 
           width={400} 
